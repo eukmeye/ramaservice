@@ -31,7 +31,31 @@
     .floating-buttons a{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;color:#fff;font-size:26px;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,.3)}
     .btn-whatsapp{background:#25D366}
     .btn-call{background:var(--primary)}
-  </style>
+ /* Logos de proveedores */
+.providers-logos{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:30px;
+  align-items:center;
+  justify-items:center;
+  margin-top:30px;
+}
+
+.providers-logos img{
+  max-width:140px;
+  max-height:80px;
+  width:100%;
+  object-fit:contain;
+  filter:grayscale(100%);
+  opacity:0.85;
+  transition:all 0.3s ease;
+}
+
+.providers-logos img:hover{
+  filter:grayscale(0%);
+  opacity:1;
+}
+ </style>
 </head>
 <body>
 
@@ -192,14 +216,24 @@
 
 <section id="proveedores">
   <h2>Nuestros Proveedores</h2>
+
   <div class="services">
     <div class="card">
-      <p>Trabajamos con <strong>fabricantes y proveedores homologados</strong>, garantizando la calidad, fiabilidad y cumplimiento normativo de todos los equipos que instalamos y mantenemos.</p>
-      <p style="margin-top:15px;">Seleccionamos cuidadosamente nuestros proveedores para asegurar que los sistemas de protección contra incendios cumplen con las normativas RIPCI, CTE y Normas UNE, ofreciendo a nuestros clientes la máxima seguridad y tranquilidad.</p>
-      <p style="margin-top:15px;"><em>Logotipos de proveedores se añadirán próximamente.</em></p>
+      <p style="text-align:center; max-width:900px; margin:0 auto 30px;">
+        Trabajamos con <strong>fabricantes y proveedores homologados</strong>, garantizando la calidad, fiabilidad y el cumplimiento normativo de todos los equipos que instalamos y mantenemos.
+      </p>
+
+      <div class="providers-logos">
+        <img src="proveedor1.png" alt="Proveedor 1">
+        <img src="proveedor2.png" alt="Proveedor 2">
+        <img src="proveedor3.png" alt="Proveedor 3">
+        <img src="proveedor4.png" alt="Proveedor 4">
+        <img src="proveedor5.png" alt="Proveedor 5">
+      </div>
     </div>
   </div>
 </section>
+
 
 <section id="normativa">
   <h2>Normativa y Certificaciones</h2>
